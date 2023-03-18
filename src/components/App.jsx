@@ -5,7 +5,7 @@ import Filter from './Filter/Filter';
 import ContactsSection from './ListAddContact/ListAddContact';
 import { DataContainer } from './App.styled';
 
-function App() {
+export default function App() {
   const [contacts, setContacts] = useState();
   const [filter, setFilter] = useState('');
   const [visibleContacts, setVisibleContacts] = useState([]);
@@ -66,5 +66,3 @@ function App() {
     </DataContainer>
   );
 }
-
-export default App;
