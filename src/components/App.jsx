@@ -16,6 +16,8 @@ export default function App() {
 
     if (parseContacts) {
       setContacts(parseContacts);
+    } else {
+      setContacts([]);
     }
   }, []);
 
