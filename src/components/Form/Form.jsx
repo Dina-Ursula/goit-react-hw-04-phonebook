@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FormSubmit, InputContainer, Input, ButtonSubmit } from './Form.styled';
 
@@ -6,13 +6,6 @@ function Form({ onSubmit }) {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
 
-  // const handleNameChange = evt => {
-  //   setName(evt.target.value);
-  // };
-
-  // const handleNumberChange = evt => {
-  //   setNumber(evt.target.value);
-  // };
   const handleChange = evt => {
     const { name, value } = evt.target;
 
