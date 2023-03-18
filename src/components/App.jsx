@@ -26,7 +26,7 @@ export default function App() {
   }, [contacts]);
 
   const formSubmit = ({ name, number }) => {
-    if ((contacts || []).find(contact => contact.name === name)) {
+    if (contacts.find(contact => contact.name === name)) {
       return alert(`${name} is already in contacts`);
     }
     setContacts(prevState => {
